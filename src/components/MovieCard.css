@@ -1,0 +1,89 @@
+.card {
+  width: 14rem;
+  background-color: #212121;
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+  box-shadow: rgba(7, 7, 7, 0.25) 0px 25px 50px -12px;
+  transition: box-shadow 0.7s;
+}
+.imgWrapper {
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.imgWrapper img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.releaseDate {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    #000000 0%,
+    #000000d0 70%,
+    transparent 100%
+  );
+  width: 100%;
+  height: 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.releaseDate p {
+  width: 12.5rem;
+  margin: 10px auto;
+  text-wrap: wrap;
+  text-align: center;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px;
+}
+.cardBody h2,
+.cardBody p {
+  margin: 0;
+}
+.cardBody h2 {
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+.cardBody p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+abbr {
+  all: unset;
+}
+.card:hover .releaseDate {
+  height: 150px;
+}
+.card:hover .imgWrapper img {
+  transform: scale(1.05);
+}
+.card:hover {
+  box-shadow: rgba(172, 172, 172, 0.55) 0px 25px 50px -12px;
+}
+@media screen and (max-width: 450px) {
+  .card{
+    width: 17rem;
+  }
+  .releaseDate {
+    background-image: linear-gradient(
+    to top,
+    #000000 0%,
+    #000000d0 90%,
+    transparent 100%
+  );
+  }
+  .releaseDate p {
+  width: 15rem;
+  }
+}

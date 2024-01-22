@@ -1,0 +1,48 @@
+.Navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.7);
+  max-width: 1300px;
+  height: 70px;
+  margin: auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.Navbar a {
+  height: 100%;
+}
+.Navbar a img {
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+.Navbar button {
+  all: unset;
+  color: white;
+  background-color: #212121;
+  border: 2px lightgray solid;
+  border-radius: 50px;
+  height: 35px;
+  padding: 5px 17px;
+  box-shadow: 0 0 3px lightgray;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.toShow {
+  display: none;
+}
+.Navbar a img:hover {
+    filter: drop-shadow(0 0 5px lightgray);
+}
+.Navbar button:hover {
+  box-shadow: 0 0 8px lightgray;
+  background-color: #303030;
+}
+.Navbar button:hover .toShow {
+  display: inline;
+}

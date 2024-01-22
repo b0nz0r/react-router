@@ -1,0 +1,41 @@
+.Details {
+  max-width: 1100px;
+  height: 70vh;
+  background-color: #212121;
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 10px;
+}
+.Details p,
+.Details h1 {
+  margin: 0;
+}
+.backHome {
+  width: 100%;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  text-align: right;
+}
+.backHome a {
+  text-decoration: none;
+}
+#backHome {
+  display: inline;
+  color: white;
+  margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  .Details {
+    margin: 10px;
+  }
+  .Details iframe {
+    width: 70%;
+    height: 60%;
+  }
+}

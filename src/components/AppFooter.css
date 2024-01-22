@@ -1,0 +1,28 @@
+.AppFooter p {
+  margin: 0 auto;
+}
+.AppFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 30px;
+  background-image: linear-gradient(to top , black, transparent);
+}
+p{
+    color: white;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+    color: lightgray;
+    margin-top: 30px;
+}
+hr{
+    width: 300px;
+}
+.icons svg:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #ffffff71);
+}

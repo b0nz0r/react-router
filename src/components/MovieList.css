@@ -1,0 +1,29 @@
+.MovieList {
+  /* border: 2px gray solid; */
+  max-width: 1100px;
+  padding: 30px 10px;
+  margin: auto;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#movie-title {
+  all: unset;
+  background-color: #212121;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 15px;
+  box-shadow: 0 0 15px;
+  transition: background-color 0.5s, color 0.3s;
+}
+#movie-title:focus {
+  color: white;
+  background-color: #303030;
+}
+.MovieList a {
+  text-decoration: none;
+}

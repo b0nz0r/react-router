@@ -1,0 +1,49 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #212121;
+  border-radius: 6px;
+  border: 1px #2b2b2b solid;
+}
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to top, #111111 50%, #707070 100%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #303030;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-size: large;
+}
+.App {
+  background-image: linear-gradient(to top, #111111 40%, transparent 100%),
+    url("https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQTQRt70-FUp4pDljmeqIBkuIVy-9ehAaduKsnh3NouFiVSUq5WQnZu1kis72dBmPtz1CUjnUfoTHuYGXYyecs_oserw3b9LxFNRJOT2RGuyhNaGmC9hU0YI1rWVulTDdDXFaCQVJ5zZBaFe6qo5pFf1AaT4.jpg?r=5cf");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#scroll-to-top {
+  all: unset;
+  color: white;
+  background-color: #21212169;
+  border: 2px lightgray solid;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 0 3px lightgray;
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 27px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+#scroll-to-top:hover {
+  box-shadow: 0 0 8px lightgray;
+  background-color: #303030;
+}

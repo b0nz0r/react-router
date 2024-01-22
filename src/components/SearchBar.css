@@ -1,0 +1,58 @@
+.SearchBar {
+  max-width: 900px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 10px;
+  z-index: 2;
+}
+
+.SearchBar #movie-title {
+  all: unset;
+  max-width: 400px;
+}
+.SearchBar #movie-rating {
+  max-width: 300px;
+  border: none;
+}
+.SearchBar #movie-title,
+.SearchBar #movie-rating {
+  background-color: #212121;
+  color: #080808;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 15px;
+  box-shadow: 0 0 15px, inset 0 0 5px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.5s, color 0.3s;
+}
+.SearchBar #movie-title:focus,
+.SearchBar #movie-rating:focus {
+  color: white;
+  background-color: #303030;
+  box-shadow: 0 0 8px 1px;
+}
+.SearchBar #movie-title:not(:focus),
+.SearchBar #movie-rating:not(:focus) {
+  color: dimgray;
+}
+@media screen and (max-width: 1200px) {
+  .SearchBar {
+    margin: 10px 160px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .SearchBar {
+    top: 70px;
+    margin: 10px 25px;
+  }
+  .SearchBar #movie-title,
+  .SearchBar #movie-rating {
+    max-width: 120px;
+  }
+}
